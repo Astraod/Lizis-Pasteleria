@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas frecuentes</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cdb0eb4f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header with-100">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <img  class="logo__imagen" src="Imagenes/Logo.png" alt="Logo Lizis Pasteleria">
+                </a>
+
+                <nav class="navegacion">
+                    <ul class="no-padding">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a> </li>                    
+                        <li><a href="contactanos.html">Contáctanos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <div class="iconos">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="preguntas_frecuentes contenedor">
+        <h2>FAQ’s</h2>
+        <div class="faq__contenedor">
+            <div class="faq__encabezado">
+                <span class="faq__titulo">Pregunta 1</span>
+                <button class="faq__boton"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="faq__respuesta">
+                <p>Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor. </p>
+            </div>
+        </div>
+
+        <div class="faq__contenedor">
+            <div class="faq__encabezado">
+                <span class="faq__titulo">Pregunta 2</span>
+                <button class="faq__boton"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="faq__respuesta">
+                <p>Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor. </p>
+            </div>
+        </div>
+
+        <div class="faq__contenedor">
+            <div class="faq__encabezado">
+                <span class="faq__titulo">Pregunta 3</span>
+                <button class="faq__boton"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="faq__respuesta">
+                <p>Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor. </p>
+            </div>
+        </div>
+
+        <div class="faq__contenedor">
+            <div class="faq__encabezado">
+                <span class="faq__titulo">Pregunta 4</span>
+                <button class="faq__boton"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="faq__respuesta">
+                <p>Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor. </p>
+            </div>
+        </div>
+
+        <div class="faq__contenedor">
+            <div class="faq__encabezado">
+                <span class="faq__titulo">Pregunta 5</span>
+                <button class="faq__boton"><i class="fas fa-chevron-down"></i></button>
+            </div>
+            <div class="faq__respuesta">
+                <p>Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor. </p>
+            </div>
+        </div>
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="contenedor footer__contenedor">
+            <img  class="footer__logo" src="Imagenes/Logo2.png" alt="Logo Lizis Pasteleria">
+
+            <div class="footer__section">
+                <h5>MENÚ</h5>
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h5>EMPRESA</h5>
+                <ul>
+                    <li><a href="faqs.html">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h5>SÍGUENOS</h5>
+                <div>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    const toggleButtons = document.querySelectorAll('.faq__boton');
+
+    toggleButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const faqItem = btn.closest('.faq__contenedor');
+        const answer = faqItem.querySelector('.faq__respuesta');
+
+        // Ocultar otras respuestas y flechas
+        document.querySelectorAll('.faq__respuesta').forEach(a => {
+          if (a !== answer) a.style.display = 'none';
+        });
+        document.querySelectorAll('.faq__boton').forEach(b => {
+          if (b !== btn) b.classList.remove('rotate');
+        });
+
+        // Alternar esta respuesta
+        const isVisible = answer.style.display === 'block';
+        answer.style.display = isVisible ? 'none' : 'block';
+        btn.classList.toggle('rotate', !isVisible);
+      });
+    });
+  </script>
+</body>
+</html>

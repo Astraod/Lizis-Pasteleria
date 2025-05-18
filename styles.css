@@ -470,3 +470,51 @@ img {vertical-align: middle;}
     .contenedor_imagenes{
     width: 100%;
 }}
+
+
+/*** PREGUNTAS FRECUENTES ***/
+.preguntas_frecuentes{
+    padding: 30px 0;
+}
+.faq__contenedor {
+    border-bottom: 2px solid var(--secundario);
+    margin-bottom: 10px;
+    margin-bottom: 35px;
+
+}
+
+.faq__encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    font-family: var(--fuenteHeading);
+}
+
+.faq__titulo {
+    font-size: 30px;
+}
+
+.faq__boton {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    color: #333;
+}
+
+.faq__boton.rotate i {
+    transform: rotate(180deg);
+}
+
+.faq__boton i {
+    transition: transform 0.3s ease;
+}
+
+.faq__respuesta {
+    display: none;
+    padding: 0 20px;
+    color: #333;
+    border-radius: 5px;
+}
