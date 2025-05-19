@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cdb0eb4f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header with-100">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <img  class="logo__imagen" src="Imagenes/Logo.png" alt="Logo Lizis Pasteleria">
+                </a>
+
+                <nav class="navegacion">
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a> </li>                    
+                        <li><a href="contactanos.html">Contáctanos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <div class="iconos">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <main class="cotización contenedor">
+        <h2 class="centrar-texto">Cotización</h2>
+            <form class="formulario">
+                <fieldset>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Correo">
+                        </div>
+
+                        <div class="campo">
+                            <label>Tipo de producto</label>
+                            <select  class="input-text" id="tipo_producto" name="tipo_producto">
+                                <option value="pastel">Pastel</option>
+                                <option value="rol">Rol de Canela</option>
+                                <option value="tartaletas">Tartaletas</option>
+                                <option value="brownie">Brownie</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label>Sabor</label>
+                            <select  class="input-text" id="sabores" name="sabores">
+                                <option value="chocolate">Chocolate</option>
+                                <option value="vainilla">Vainilla</option>
+                                <option value="oreo">Oreo</option>
+                                <option value="cajeta">Cajeta</option>
+                                <option value="fresas">Fresas</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label>Decoración</label>
+                            <input class="input-text" type="text" placeholder="Decoración">
+                        </div>
+
+                        <div class="campo">
+                            <label>Cantidad</label>
+                            <select  class="input-text" id="cantidad" name="cantidad">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label>Fecha de entrega</label>
+                            <input class="input-text" type="date" >
+                        </div>
+
+                        <div class="campo">
+                            <label>Comentario adicional</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <input class="boton enviar" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+    </main>
+
+    <div class="redes">
+        <div class="contenedor redes__elementos">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f redes__icono"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram redes__icono"></i></a>
+            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp redes__icono"></i></a>
+        </div>
+    </div>
+
+    <section class="contenedor">
+        <div class="ubicacion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2639.254771003844!2d-103.35034231027628!3d20.691135081381802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1739688543484!5m2!1ses-419!2smx"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="ubicacion__datos">
+                <h3 class="titulo__ubicacion">Domicilio</h3>
+                <p>Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida.</p>
+
+                <h3 class="titulo__ubicacion">Horario</h3>
+                <p>9:00 a 5:00pm</p>
+                <p class="ubicacion__dato">Lunes a Sabado</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="background_principal contacto">
+        <div class="contenedor">
+            <h2 class="contacto__titulo">¿Tienes algo más que decirnos?</h2>
+            <div class="contacto__contenedor">
+                <img class="contacto__imagen" src="Imagenes/Extra 3 - copia.jpg" alt="">
+                
+                <div class="contenedor__formulario">
+                    <form class="formulario sombra">
+                    <fieldset >
+                        <div class="contenedor-campos">
+                            <div class="campo_2">
+                                <label>Nombre</label>
+                                <input class="input-text" type="text" placeholder="Tu Nombre">
+                            </div>
+
+                            <div class="campo_2">
+                                <label>Correo</label>
+                                <input class="input-text" type="email" placeholder="Tu Correo">
+                            </div>
+
+                            <div class="campo_2">
+                                <label>Escribe tu mensaje</label>
+                                <textarea class="input-text"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <input class="boton enviar" type="submit" value="Enviar">
+                        </div>
+                    </fieldset>
+                </form>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor footer__contenedor">
+            <img  class="footer__logo" src="Imagenes/Logo2.png" alt="Logo Lizis Pasteleria">
+
+            <div class="footer__section">
+                <h5>MENÚ</h5>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h5>EMPRESA</h5>
+                <ul>
+                    <li><a href="faqs.html">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h5>SÍGUENOS</h5>
+                <div>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

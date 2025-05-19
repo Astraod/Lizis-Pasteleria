@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cdb0eb4f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header with-100">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <img  class="logo__imagen" src="Imagenes/Logo.png" alt="Logo Lizis Pasteleria">
+                </a>
+
+                <nav class="navegacion">
+                    <ul class="no-padding">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a> </li>                    
+                        <li><a href="contactanos.html">Contáctanos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <div class="iconos">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="carrito">
+        <h2 class="carrito__titulo">Carrito de Compras</h2>
+        <div class="carrito__wrap">
+            <div class="carrito__main">
+            <table class="carrito__table">
+                <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Subtotal</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><img src="Imagenes/Tartaletas individuales 2.jpg" alt="Producto A"></td>
+                    <td>$$$$</td>
+                    <td class="carrito__cantidad">
+                    <button class="cant__btn">−</button>
+                    <span class="cant__num">1</span>
+                    <button class="cant__btn">+</button>
+                    </td>
+                    <td>$$$$</td>
+                </tr>
+                <tr>
+                    <td><img src="Imagenes/Extra 2.jpg" alt="Producto B"></td>
+                    <td>$$$$</td>
+                    <td class="carrito__cantidad">
+                    <button class="cant__btn">−</button>
+                    <span class="cant__num">1</span>
+                    <button class="cant__btn">+</button>
+                    </td>
+                    <td>$$$$</td>
+                </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <aside class="carrito__summary">
+                <h3 class="summary__titulo">Total</h3>
+                <div class="summary__line">
+                    <span>Subtotal</span><span>$$$</span>
+                </div>
+                <div class="summary__line">
+                    <span>Envío</span><span>$$$</span>
+                </div>
+                <div class="summary__line summary__total">
+                    <span>Total</span><span>$$$$</span>
+                </div>
+                <a href="#" class="summary__btn">FINALIZAR COMPRA</a>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor footer__contenedor">
+            <img  class="footer__logo" src="Imagenes/Logo2.png" alt="Logo Lizis Pasteleria">
+
+            <div class="footer__section">
+                <h5>MENÚ</h5>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h5>EMPRESA</h5>
+                <ul>
+                    <li><a href="faqs.html">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h5>SÍGUENOS</h5>
+                <div>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
