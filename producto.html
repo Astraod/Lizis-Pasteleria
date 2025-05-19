@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lizis Pasteleria</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9cdb0eb4f3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header with-100">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <img  class="logo__imagen" src="Imagenes/Logo.png" alt="Logo Lizis Pasteleria">
+                </a>
+
+                <nav class="navegacion">
+                    <ul class="no-padding">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="productos.html">Productos</a> </li>                    
+                        <li><a href="contactanos.html">Contáctanos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+
+                <div class="iconos">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-user"></i>
+                    <a href="carrito.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="producto_individual contenedor">
+        <img class="producto_individual__imagen" src="Imagenes/Pastel de chocolate.jpg" alt="Pastel de chocolate">
+
+        <div class="producto_detalles">
+            <div class="producto_detalles__titulo">
+                <h3>Pastel de Chocolate</h3>
+                <p>$$$</p>
+            </div>
+            <p class="producto_detalles__texto">Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor.
+             </p>
+             <p class="producto_detalles__texto">Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor.
+             </p>
+            
+            <select  class="producto_detalles__input" id="cantidad" name="cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+            <a class="boton boton__producto" href="nosotros.html">Añadir a carrito</a>
+        </div>
+    </main>
+
+    <section class="contenedor productos_relacionados_contenedor">
+        <h4>Productos relacionados</h4>
+        <div class="productos_relacionados">
+            <div class="producto_relacionado">
+                <img class="producto_relacionado__imagen" src="Imagenes/Paquete 4 rolls.jpg" alt="">
+                <h5 class="producto_relacionado__titulo" >Producto 1</h5>
+                <p class="producto_relacionado__precio">$$$$$</p>
+            </div>
+
+            <div class="producto_relacionado">
+                <img class="producto_relacionado__imagen" src="Imagenes/Extra 1.jpg" alt="">
+                <h5 class="producto_relacionado__titulo" >Producto 2</h5>
+                <p class="producto_relacionado__precio">$$$$$</p>
+            </div>
+
+            <div class="producto_relacionado">
+                <img class="producto_relacionado__imagen" src="Imagenes/Cupkcakes 2.webp" alt="">
+                <h5 class="producto_relacionado__titulo" >Producto 3</h5>
+                <p class="producto_relacionado__precio">$$$$$</p>
+            </div>
+
+            <div class="producto_relacionado">
+                <img class="producto_relacionado__imagen" src="Imagenes/Tartaleta Grande 2.jpg" alt="">
+                <h5 class="producto_relacionado__titulo" >Producto 4</h5>
+                <p class="producto_relacionado__precio">$$$$$</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenedor">
+        <h4>Reseñas</h4>
+        <div class="reviews">
+            <div class="review">
+                <img class="review_imagen " src="Imagenes/icono.png" alt="">
+
+                <div class="review__datos">
+                    <h5 >Usuario</h5>
+                    <p>Fecha</p>
+
+                    <div class="review_calificacion">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <p>Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor.</p>
+                <img class="review_imagen_resena" src="Imagenes/picture.png" alt="">
+            </div>
+        </div>
+
+        <div class="reviews">
+            <div class="review">
+                <img class="review_imagen " src="Imagenes/icono.png" alt="">
+
+                <div class="review__datos">
+                    <h5 >Usuario</h5>
+                    <p>Fecha</p>
+
+                    <div class="review_calificacion">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+
+                <p>Duis quis magna id metus cursus condimentum eget vitae erat. Phasellus
+                sit amet magna gravida, fermentum neque egestas, fermentum tortor.</p>
+                <img class="review_imagen_resena" src="Imagenes/picture.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contenedor footer__contenedor">
+            <img  class="footer__logo" src="Imagenes/Logo2.png" alt="Logo Lizis Pasteleria">
+
+            <div class="footer__section">
+                <h5>MENÚ</h5>
+                <ul>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contactanos.html">Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h5>EMPRESA</h5>
+                <ul>
+                    <li><a href="faqs.html">Preguntas Frecuentes</a></li>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__section">
+                <h5>SÍGUENOS</h5>
+                <div>
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
