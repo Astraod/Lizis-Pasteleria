@@ -1333,3 +1333,184 @@ iframe{
 
     }
 }
+
+/*** BLOG ***/
+/**Banner**/
+.blog__banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Imagenes/Tartaleta\ Grande.jpg);
+    height: 15rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner__texto__titulo--con{
+    font-size: 6rem;
+    margin: 0;
+    padding: 0;
+}
+.banner__texto--con {
+    font-size: 6rem;
+    text-align: center;
+    color: var(--blanco);
+}
+
+/**Recetas destacadas**/
+
+.recetas{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+.receta{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px 30px 15px;
+}
+
+@media (max-width: 768px) {
+    .receta{
+        padding: 0 35px 30px 35px;
+    }
+}
+.receta__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.receta__titulo{
+    padding: 0;
+    margin: 25px 0;
+    font-size: 25px;
+}
+.receta a{
+    margin: 0;
+}
+
+/** Extras **/
+.extras{
+    padding: 50px 30px;
+}
+@media (min-width: 768px) {
+    .extras{
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        padding: 50px 30px;
+    }
+}
+.extra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 768px) {
+    .extra{
+        justify-content:initial;
+        align-items:start;
+        padding: 0 0;
+    }
+}
+.extra a{
+    color: var(--secundario);
+    padding: 20px 0;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 17px;
+}
+.extra_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.extra_2 div{
+    padding: 20px;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .extra_2 div{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 25px;
+        text-align: justify;
+        padding: 0 0;
+    }
+    .extra_2 {
+    display: inline;
+}
+}
+
+/*** Noticias ***/
+.cont{
+    padding: 40px 0;
+}
+@media (max-width: 768px) {
+    .noticias{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .noticias_titulo{
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor__noticias{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+}
+}
+
+.noticias {
+    display: grid;
+    grid-template-rows: auto auto;
+    color: var(--negro);
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .noticias {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 20px;
+    }
+    .noticia__titulo{
+        margin: 0;
+    }
+}
+
+
+.noticia__imagen {
+    width: 100%;
+}
+.noticia__imagen, .noticia__imagen-left{
+    grid-row: 1 / 2;
+}
+@media (min-width: 768px) {
+    .noticia__contenido-left{
+        text-align: left;
+        margin: 0 1rem;
+    }
+    
+    .noticia__imagen {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+
+        margin: 0 ;
+    }
+}
+
