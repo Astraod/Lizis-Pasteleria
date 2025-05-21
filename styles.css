@@ -1015,7 +1015,7 @@ iframe{
 .producto__nombre {
   font-family: var(--fuenteHeading);
   font-weight: 500;
-  font-size: 32px;
+  font-size: 29px;
   margin: 1rem 0 0.5rem;
 }
 
@@ -1514,3 +1514,25 @@ iframe{
     }
 }
 
+/*** AVISO DE PRIVACIDAD ***/
+.aviso_privacidad{
+    text-align: justify;
+    padding: 40px 0 60px 0;
+}
+.aviso_privacidad h4{
+    margin: 50px 0 0 0;
+}
+.aviso_privacidad p,.aviso_privacidad ul {
+    font-size: 18px;
+}
+
+.terminos{
+    padding: 40px 0 60px 0;
+    text-align: justify;
+    line-height: 1.8;
+     font-size: 18px;
+}
+
+.terminos h4{
+    margin: 50px 0 0 0;
+}
